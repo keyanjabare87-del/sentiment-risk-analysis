@@ -1,0 +1,24 @@
+{
+  "split_source": "outputs/predictions/{train,val,test}.csv",
+  "split_policy": "统一划分，与 train_bert.py 完全一致；脚本内不再重新划分",
+  "split_sizes": {
+    "train": 43893,
+    "val": 9406,
+    "test": 9406
+  },
+  "split_sha256": {
+    "train": "5532ae29d7e5a300",
+    "val": "f9ac517a33305394",
+    "test": "92f0b3295b2f663d"
+  },
+  "train_leak_removed": 1,
+  "random_state": 42,
+  "selection_metric": "validation_macro_f1",
+  "best_model_by_validation": "linear_svm",
+  "models": [
+    "logistic_regression",
+    "naive_bayes",
+    "linear_svm"
+  ],
+  "features": "jieba + word-level TF-IDF unigram/bigram"
+}

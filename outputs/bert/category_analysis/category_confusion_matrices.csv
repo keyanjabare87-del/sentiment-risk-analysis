@@ -1,0 +1,11 @@
+﻿category,actual_negative_predicted_negative_TN,actual_negative_predicted_positive_FP,actual_positive_predicted_negative_FN,actual_positive_predicted_positive_TP
+书籍,216,36,2,305
+平板,708,33,43,683
+手机,161,6,9,165
+水果,711,21,60,698
+洗发水,689,34,29,721
+热水器,7,5,3,62
+蒙牛,144,4,12,154
+衣服,724,48,28,710
+计算机,270,12,12,273
+酒店,764,60,45,739

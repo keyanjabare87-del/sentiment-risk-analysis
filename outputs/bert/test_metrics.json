@@ -1,0 +1,18 @@
+{
+  "model": "bert-base-chinese",
+  "max_length": 192,
+  "batch_size": 8,
+  "learning_rate": 2e-05,
+  "seed": 42,
+  "best_epoch": 2,
+  "best_val_macro_f1": 0.9480054280145813,
+  "device": "cuda",
+  "train_size_after_dedup": 43893,
+  "validation_size": 9406,
+  "test_size": 9406,
+  "train_test_overlap_removed": 1,
+  "test_accuracy": 0.9466298107590899,
+  "test_macro_precision": 0.9466431743034558,
+  "test_macro_recall": 0.9466056910045253,
+  "test_macro_f1": 0.9466216923519021
+}

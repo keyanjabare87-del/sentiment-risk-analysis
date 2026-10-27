@@ -1,0 +1,7 @@
+﻿device,batch_size,n_samples,total_seconds,ms_per_sample,samples_per_second
+cuda,1,128,1.9469,15.21,65.74
+cuda,8,128,0.643,5.023,199.07
+cuda,32,128,1.0342,8.08,123.77
+cpu,1,128,14.1134,110.261,9.07
+cpu,8,128,16.924,132.219,7.56
+cpu,32,128,23.1039,180.499,5.54

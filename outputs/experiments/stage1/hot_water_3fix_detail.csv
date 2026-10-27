@@ -1,0 +1,4 @@
+﻿sample_id,split,category,review,orig_label,orig_sentiment,corrected_label,corrected_sentiment,flip_direction,reason_type,audit_label,evidence,model_prediction,prob_negative,reviewer,source_file
+36258,test,热水器,保温效果差,1,正面,0,负面,1→0,极性倒置：原文整体负面，原标签为正面,疑似标签争议,'保温效果差'为明确产品缺陷；标签1与语义完全相反,0,0.99755859375,人工阅读原文判定（未参考模型概率）,outputs/bert/category_analysis/manual_audit_all_502_error_cases.csv
+36228,test,热水器,后背挂墙上的不平，售后安装师傅知道,1,正面,0,负面,1→0,极性倒置：原文整体负面，原标签为正面,疑似标签争议,指出后背挂墙不平、需售后处理，属质量与安装抱怨,0,0.99267578125,人工阅读原文判定（未参考模型概率）,outputs/bert/category_analysis/manual_audit_all_502_error_cases.csv
+36694,test,热水器,帮别人买的，说很好，就是顺丰慢了点，不过还可以了，,0,负面,1,正面,0→1,极性倒置：原文整体正面，原标签为负面,疑似标签争议,'说很好''不过还可以了'整体正面，仅物流稍慢,1,0.0090179443359375,人工阅读原文判定（未参考模型概率）,outputs/bert/category_analysis/manual_audit_all_502_error_cases.csv

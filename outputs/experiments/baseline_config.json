@@ -1,0 +1,61 @@
+{
+  "dataset": {
+    "name": "online_shopping_10_cats",
+    "label_definition": {
+      "0": "负面",
+      "1": "正面"
+    },
+    "bert_family_split": {
+      "train": 43894,
+      "val": 9406,
+      "test": 9406
+    },
+    "baseline_family_split": {
+      "train": 43893,
+      "val": 9406,
+      "test": 9406
+    },
+    "warning": "两族划分不同，比较前必须统一"
+  },
+  "bert": {
+    "model": "bert-base-chinese",
+    "max_length": 192,
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "seed": 42,
+    "best_epoch": 2,
+    "best_val_macro_f1": 0.9480054280145813,
+    "device": "cuda",
+    "train_size_after_dedup": 43893,
+    "validation_size": 9406,
+    "test_size": 9406,
+    "train_test_overlap_removed": 1,
+    "test_accuracy": 0.9466298107590899,
+    "test_macro_precision": 0.9466431743034558,
+    "test_macro_recall": 0.9466056910045253,
+    "test_macro_f1": 0.9466216923519021
+  },
+  "tfidf_baselines": {
+    "random_state": 42,
+    "test_size": 0.15,
+    "validation_size_overall": 0.15,
+    "selection_metric": "validation_macro_f1",
+    "best_model_by_validation": "linear_svm",
+    "models": [
+      "logistic_regression",
+      "naive_bayes",
+      "linear_svm"
+    ],
+    "features": "jieba + word-level TF-IDF unigram/bigram"
+  },
+  "model_selection": {
+    "criterion": "validation macro-F1",
+    "best_epoch": 2,
+    "test_used_for_selection": false,
+    "patience": 2
+  },
+  "blockers": [
+    "train_bert.py 与 train_baselines.py 使用两套不同划分，4 模型对比表当前不成立",
+    "BERT-test 中有 1850 条落在基线族 train/val，直接重打分会被污染"
+  ]
+}

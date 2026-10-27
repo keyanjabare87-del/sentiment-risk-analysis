@@ -1,0 +1,5 @@
+﻿experiment_id,experiment,role,model,seed,train_size,val_size,test_size,error_count,accuracy,macro_f1,negative_precision,negative_recall,negative_f1,TN,FP,FN,TP,inference_ms_per_sample,comparability,status,notes,source_file
+B0,TF-IDF + LogisticRegression,干净子集对照,TF-IDF + LogisticRegression,42,,,7556,563,0.9255,0.9216,0.9453,0.9329,0.9391,4341,312,251,2652,待测,可比（同一批样本）,已完成,仅保留基线族未参与训练/验证的样本,outputs/predictions/_deprecated_alt_split/logistic_regression_test_predictions.csv
+B0,TF-IDF + NaiveBayes,干净子集对照,TF-IDF + NaiveBayes,42,,,7556,564,0.9254,0.9218,0.9538,0.9235,0.9384,4297,356,208,2695,待测,可比（同一批样本）,已完成,仅保留基线族未参与训练/验证的样本,outputs/predictions/_deprecated_alt_split/naive_bayes_test_predictions.csv
+B0,TF-IDF + LinearSVM,干净子集对照,TF-IDF + LinearSVM,42,,,7556,525,0.9305,0.9270,0.9532,0.9329,0.9430,4341,312,213,2690,待测,可比（同一批样本）,已完成,仅保留基线族未参与训练/验证的样本,outputs/predictions/_deprecated_alt_split/linear_svm_test_predictions.csv
+A,BERT-base-chinese,干净子集对照,BERT-base-chinese,42,,,7556,418,0.9447,0.9419,0.9651,0.9443,0.9546,4394,259,159,2744,待测,可比（同一批样本）,已完成,仅保留基线族未参与训练/验证的样本,outputs/bert/test_predictions.csv

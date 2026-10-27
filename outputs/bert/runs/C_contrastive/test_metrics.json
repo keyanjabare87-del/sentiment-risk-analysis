@@ -1,0 +1,42 @@
+{
+  "model": "bert-base-chinese",
+  "max_length": 192,
+  "batch_size": 8,
+  "learning_rate": 2e-05,
+  "seed": 42,
+  "best_epoch": 3,
+  "best_val_macro_f1": 0.9519409689586673,
+  "device": "cuda",
+  "run_tag": "C_contrastive",
+  "label_fixes_file": "",
+  "label_fix_report": {
+    "train": {
+      "matched": 0,
+      "changed": 0
+    },
+    "val": {
+      "matched": 0,
+      "changed": 0
+    },
+    "test": {
+      "matched": 0,
+      "changed": 0
+    }
+  },
+  "augment_file": "outputs/experiments/stage3/contrastive_oversample.csv",
+  "augment_report": {
+    "requested": 933,
+    "matched": 933,
+    "added_rows": 933,
+    "train_size_after": 44826
+  },
+  "test_label_flips": 0,
+  "train_size_after_dedup": 44826,
+  "validation_size": 9406,
+  "test_size": 9406,
+  "train_test_overlap_removed": 1,
+  "test_accuracy": 0.9486497980012758,
+  "test_macro_precision": 0.9486431153679757,
+  "test_macro_recall": 0.9486451236991769,
+  "test_macro_f1": 0.9486441088077071
+}

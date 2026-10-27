@@ -1,0 +1,8 @@
+﻿experiment_id,experiment,role,model,seed,train_size,val_size,test_size,error_count,accuracy,macro_f1,negative_precision,negative_recall,negative_f1,TN,FP,FN,TP,inference_ms_per_sample,comparability,status,notes,source_file
+B0,TF-IDF + LogisticRegression,基线（传统模型，待重跑）,TF-IDF + LogisticRegression,42,,,9406,712,0.9243,0.9243,0.9156,0.9329,0.9242,4341,312,400,4353,待测,不可比：不同 test 划分,已完成,test_split.csv 原标签（与 BERT 不同划分）,outputs/predictions/_deprecated_alt_split/logistic_regression_test_predictions.csv
+B0,TF-IDF + NaiveBayes,基线（传统模型，待重跑）,TF-IDF + NaiveBayes,42,,,9406,702,0.9254,0.9254,0.9255,0.9235,0.9245,4297,356,346,4407,待测,不可比：不同 test 划分,已完成,test_split.csv 原标签（与 BERT 不同划分）,outputs/predictions/_deprecated_alt_split/naive_bayes_test_predictions.csv
+B0,TF-IDF + LinearSVM,基线（传统模型，待重跑）,TF-IDF + LinearSVM,42,,,9406,655,0.9304,0.9304,0.9268,0.9329,0.9298,4341,312,343,4410,待测,不可比：不同 test 划分,已完成,test_split.csv 原标签（与 BERT 不同划分）,outputs/predictions/_deprecated_alt_split/linear_svm_test_predictions.csv
+A,BERT-base-chinese,基线（对照组）,BERT-base-chinese,42,,,9406,502,0.9466,0.9466,0.9476,0.9443,0.9460,4394,259,243,4510,待测,可比（参考口径）,已完成,test.csv 原标签,outputs/bert/test_predictions.csv
+B,训练集标签清洗,待验证,bert-base-chinese,42,,,,,,,,,,,,,,待测,,未开始,,
+C,转折句定向增强,待验证,bert-base-chinese,42,,,,,,,,,,,,,,待测,,未开始,,
+D,方面级情感分析,待验证,bert-base-chinese,42,,,,,,,,,,,,,,待测,,未开始,,

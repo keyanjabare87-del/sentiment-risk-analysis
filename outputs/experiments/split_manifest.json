@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-10-26T21:41:38",
+  "policy": "outputs/predictions/{train,val,test}.csv 为唯一合法划分，所有脚本必须通过 src/data_split.py 读取",
+  "label_definition": {
+    "0": "负面",
+    "1": "正面"
+  },
+  "splits": {
+    "train": {
+      "file": "outputs/predictions/train.csv",
+      "rows": 43894,
+      "sha256": "5532ae29d7e5a300ace800e2156c0701fb369f4966ea04936408590e63ce595f",
+      "label_distribution": {
+        "0": 21711,
+        "1": 22183
+      },
+      "negative_ratio": 0.4946,
+      "categories": {
+        "书籍": 2710,
+        "平板": 7001,
+        "手机": 1647,
+        "水果": 7049,
+        "洗发水": 6936,
+        "热水器": 419,
+        "蒙牛": 1397,
+        "衣服": 7033,
+        "计算机": 2820,
+        "酒店": 6882
+      }
+    },
+    "val": {
+      "file": "outputs/predictions/val.csv",
+      "rows": 9406,
+      "sha256": "f9ac517a33305394c39c964d7864dbec2a84a53cd2eee689fe7ffd70afb38237",
+      "label_distribution": {
+        "0": 4653,
+        "1": 4753
+      },
+      "negative_ratio": 0.4947,
+      "categories": {
+        "书籍": 582,
+        "平板": 1531,
+        "手机": 335,
+        "水果": 1451,
+        "洗发水": 1577,
+        "热水器": 77,
+        "蒙牛": 322,
+        "衣服": 1436,
+        "计算机": 587,
+        "酒店": 1508
+      }
+    },
+    "test": {
+      "file": "outputs/predictions/test.csv",
+      "rows": 9406,
+      "sha256": "92f0b3295b2f663dec3766e6d16ac99adb37e348d67b140b21fdeff96b826b1d",
+      "label_distribution": {
+        "0": 4653,
+        "1": 4753
+      },
+      "negative_ratio": 0.4947,
+      "categories": {
+        "书籍": 559,
+        "平板": 1467,
+        "手机": 341,
+        "水果": 1490,
+        "洗发水": 1473,
+        "热水器": 77,
+        "蒙牛": 314,
+        "衣服": 1510,
+        "计算机": 567,
+        "酒店": 1608
+      }
+    }
+  },
+  "train_after_cleaning": {
+    "raw": 43894,
+    "leak_removed": 1,
+    "internal_dup_removed": 0,
+    "final": 43893
+  },
+  "deprecated": {
+    "dir": "outputs/predictions/_deprecated_alt_split",
+    "files": [
+      "linear_svm_test_predictions.csv",
+      "logistic_regression_test_predictions.csv",
+      "naive_bayes_test_predictions.csv",
+      "test_split.csv",
+      "train_split.csv",
+      "validation_split.csv"
+    ],
+    "reason": "train_baselines.py 早期版本自行 train_test_split 生成的第二套划分"
+  },
+  "label_fixes": {
+    "count": 246,
+    "by_split": {
+      "test": 246
+    }
+  },
+  "checks": {
+    "failed": [],
+    "warnings": [
+      "train/test 文本重叠 1 条（train_bert.py 会从训练集剔除）"
+    ]
+  }
+}

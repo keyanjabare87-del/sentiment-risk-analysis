@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# 数据（体积大，不入库）
+data/raw/*.csv
+data/processed/*.csv
+
+# 模型权重
+outputs/bert/best_model/
+outputs/bert/runs/*/best_model/
+models/*.joblib
+
+# 预测与中间产物（可按需保留）
+outputs/bert/test_predictions.csv
+outputs/bert/runs/*/test_predictions.csv
+outputs/predictions/*_test_predictions.csv
+outputs/predictions/_deprecated_alt_split/
+
+# 训练日志
+outputs/**/logs/*.log
+
+# 系统
+.DS_Store
+Thumbs.db

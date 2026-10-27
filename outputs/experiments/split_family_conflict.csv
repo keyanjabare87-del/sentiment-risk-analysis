@@ -1,0 +1,4 @@
+﻿基线族划分,与BERT-test共同文本数,占BERT-test比例,其中BERT-test标签0,其中BERT-test标签1,性质
+train_split,1547,16.45%,0,1547,BERT的测试样本落在基线族的训练/验证集 → 交叉污染
+validation_split,303,3.22%,0,303,BERT的测试样本落在基线族的训练/验证集 → 交叉污染
+test_split,7556,80.33%,4653,2903,同一批样本（可对齐）

@@ -1,0 +1,5 @@
+﻿model,test样本数,与BERT-test共同文本,缺失(BERT-test有而该模型无),标签不一致条数,结论
+TF-IDF + LogisticRegression,9406,7556,1850,0,不同划分，不可直接比较
+TF-IDF + NaiveBayes,9406,7556,1850,0,不同划分，不可直接比较
+TF-IDF + LinearSVM,9406,7556,1850,0,不同划分，不可直接比较
+BERT-base-chinese,9406,9406,0,0,同一划分
